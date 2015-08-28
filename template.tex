@@ -1,0 +1,38 @@
+\documentclass{article}
+
+\usepackage{graphicx, fancyhdr, fullpage, hyperref, microtype}
+
+\urlstyle{sf}
+
+\renewcommand{\headrule}{}
+
+\newcommand{\letterblock}{
+  \sffamily
+  \small
+  \begin{tabular}{l}
+    \vspace{-20 pt}\\
+    Keith Winstein\\
+    353 Serra Mall, room 282\\
+    Stanford, California\\
+    keithw@cs.stanford.edu\\
+    \url{http://cs.stanford.edu/~keithw}
+  \end{tabular}
+}
+
+\fancypagestyle{empty}{
+  \fancyhf{}
+  \fancyhead[L]{\includegraphics[height=0.5in]{csletter2.pdf}}
+  \fancyhead[R]{\letterblock}
+}
+
+\setlength{\parindent}{0 pt}
+\setlength{\parskip}{\baselineskip}
+\addtolength{\headsep}{6\baselineskip}
+
+\begin{document}
+
+\thispagestyle{empty}
+
+Letter goes here.
+
+\end{document}
